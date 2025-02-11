@@ -12,7 +12,7 @@ while True:
             print(f"Shuma juaj e mbetur eshte: {balanca:,}")
 
         elif opsionet == 2:
-            terhiq = int(input("Zgjidh shumen qe deshironi te terhiqni: "))
+            terhiq = float(input("Zgjidh shumen qe deshironi te terhiqni: "))
             if terhiq > balanca:
                 print("Nuk keni mjaftueshem fonde!")
             else:
@@ -20,7 +20,7 @@ while True:
                 print(f"Ju lutem terhiqni parat!  Shuma juaj e mbetur eshte: {balanca:,}")
 
         elif opsionet == 3:
-            depozito = int(input("Vendos shumen qe do te depozitosh: "))
+            depozito = float(input("Vendos shumen qe do te depozitosh: "))
             balanca += depozito
             print(f"Shuma juaj e re eshte: {balanca:,}")
 
