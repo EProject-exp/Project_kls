@@ -1,4 +1,4 @@
-balanca = 10.000
+balanca = 10000
 
 while True:
     try:
@@ -9,7 +9,7 @@ while True:
                              "4.exit: "))
 
         if opsionet == 1:
-            print(f"Shuma juaj e mbetur eshte: {balanca}")
+            print(f"Shuma juaj e mbetur eshte: {balanca:,}")
 
         elif opsionet == 2:
             terhiq = int(input("Zgjidh shumen qe deshironi te terhiqni: "))
@@ -17,19 +17,18 @@ while True:
                 print("Nuk keni mjaftueshem fonde!")
             else:
                 balanca -= terhiq
-                print(f"Ju lutem terhiqni parat!  Shuma juaj e mbetur eshte: {balanca}")
+                print(f"Ju lutem terhiqni parat!  Shuma juaj e mbetur eshte: {balanca:,}")
 
         elif opsionet == 3:
             depozito = int(input("Vendos shumen qe do te depozitosh: "))
             balanca += depozito
-            print(f"Shuma juaj e re eshte: {balanca}")
+            print(f"Shuma juaj e re eshte: {balanca:,}")
 
         elif opsionet == 4:
             break
 
         else:
-            print("Opsioni i dhene nuk eshte i vlefshem. Programi do te ndaloje.")
-            break
+            print(opsionet)
 
     except ValueError:
         print("Ju lutem, shenoni nje numer te vlefshem. Programi do te ndaloje.")
