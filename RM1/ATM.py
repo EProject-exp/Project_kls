@@ -2,11 +2,11 @@ balanca = 10000
 
 while True:
     try:
-        opsionet = int(input("Zgjidh nje nga opsione e meposhtme \n-------"
-                             "1.Trego Balancen  ----"
-                             "2.Terhiq para  ----"
-                             "3.Depozito  ----"
-                             "4.exit: "))
+        opsionet = int(input("Zgjidh nje nga opsione e meposhtme \n------- ATM -------"
+                             "\n1.Trego Balancen "
+                             "\n2.Terhiq para "
+                             "\n3.Depozito  "
+                             "\n4.exit "))
 
         if opsionet == 1:
             print(f"Shuma juaj e mbetur eshte: {balanca:,}")
